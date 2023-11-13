@@ -1,15 +1,31 @@
 body {
-    background-color: blue !important;
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(28, 28, 170) !important;
 }
-.container {
-    background-color: blue !important;
-    min-height: 100vh;
+.header {
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.container {
+    background-color: rgb(28, 28, 170) !important;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 180px;
+}
 .quizcard {
     width: 30rem;
+    height: 100%;
 }
 .question-footer {
     border-top: 1px solid rgba(0, 0, 0, 0.4);
@@ -17,4 +33,18 @@ body {
     justify-content: space-between;
     align-items: center;
     padding-top: 12px;
+}
+.answerField:hover {
+    cursor: pointer;
+    background-color: rgba(28, 28, 170, 0.8);
+    color: white;
+}
+
+.text-center {
+    text-align: center;
+}
+.endScreenButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
